@@ -6,7 +6,7 @@ Você faz apenas um código para rodar em todos os sistemas operacionais, como W
 
 O roda na JVM não é o "arquivo.java" e sim o "arquivo.class" que é gerado após a compilação (bytecode)
 
-"arquivo.java" --> Arquivo que nós humanos conseguimos ler
+"arquivo.java" --> Arquivo que nós humanos conseguimos ler  
 "arquivo.class" --> bytecode que a JVM entende
 
 o comando que usamos para compilar um arquivo ".java" é o "javac" (java compiler).
