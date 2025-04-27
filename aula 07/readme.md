@@ -3,4 +3,4 @@
 - Alt + Insert -> cria um arquivo
 - Alt + 1 -> Fecha a barra lateral
 
-- Criamos o mesmmo código da aula 05, mas agora dentro do IntelliJ
+- Nessa aula criamos um projeto no IntelliJ chamado "maratona-java"
