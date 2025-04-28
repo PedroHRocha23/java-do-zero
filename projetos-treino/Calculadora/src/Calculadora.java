@@ -16,27 +16,19 @@ public class Calculadora {
     }
 
     public static float soma(float num1, float num2){
-        float soma;
-        soma = num1 + num2;
-        return soma;
+        return num1 + num2;
     }
 
     public static float sub(float num1, float num2){
-        float sub;
-        sub = num1 - num2;
-        return sub;
+        return num1 - num2;
     }
 
     public static float mult(float num1, float num2){
-        float mult;
-        mult = num1 * num2;
-        return mult;
+        return num1 * num2;
     }
 
     public static float div(float num1, float num2){
-        float div;
-        div = num1 / num2;
-        return div;
+       return num1 / num2;
     }
 
 
@@ -67,7 +59,13 @@ public class Calculadora {
             resultado = mult(num1, num2);
         }
         if (opcao == 4){
-            resultado = div(num1, num2);
+            if (num2 == 0){
+                System.out.println("Divisão por zero não é permitida!");
+                return;
+            }else {
+                resultado = div(num1, num2);
+            }
+            
         }
 
         System.out.println("Resultado = " +  resultado);
