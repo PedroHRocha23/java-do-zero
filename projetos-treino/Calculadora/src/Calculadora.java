@@ -31,6 +31,10 @@ public class Calculadora {
        return num1 / num2;
     }
 
+    public static void imprimirResultado(float result){
+        System.out.println("Resultado: " + result);
+    }
+
 
     public static void main(String[] args){
 
@@ -49,29 +53,31 @@ public class Calculadora {
         System.out.println("Digite o segundo número: ");
         num2 = input.nextFloat();
 
-        if (opcao == 1){
-            resultado = soma(num1,num2);
-        }
-        if (opcao == 2){
-            resultado = sub(num1, num2);
-        }
-        if (opcao == 3){
-            resultado = mult(num1, num2);
-        }
-        if (opcao == 4){
-            if (num2 == 0){
-                System.out.println("Divisão por zero não é permitida!");
-                return;
-            }else {
-                resultado = div(num1, num2);
-            }
-            
-        }
+        switch(opcao){
+            case 1:
+                resultado = soma(num1,num2);
+                imprimirResultado(resultado);
+                break;
+            case 2:
+                resultado = sub(num1, num2);
+                imprimirResultado(resultado);
+                break;
+            case 3:
+                resultado = mult(num1, num2);
+                imprimirResultado(resultado);
+                break;
+            case 4:
+                if(num2 == 0){
+                    System.out.println("Erro! Divisão por 0!");
+                }else{
+                    resultado = div(num1, num2);
+                    imprimirResultado(resultado);
+                }
+            default:
+                System.out.println("Opção inválida");
 
-        System.out.println("Resultado = " +  resultado);
-
+        }
     }
-
 }
 
 
