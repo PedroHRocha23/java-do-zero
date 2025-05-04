@@ -88,3 +88,11 @@ public class CarroTest01 {
 # Aula 43 - Duas variáveis referenciando o mesmo objeto
 
 carro1 = carro2
+
+# Aula 44 - Métodos parte 1
+
+- Não confundir retornar com saída
+
+- retornar = return
+
+- saida = system.out.println 
